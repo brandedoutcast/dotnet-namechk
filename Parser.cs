@@ -16,22 +16,11 @@ namespace NameChk.CLI
                 return;
             }
 
-            switch (args[0])
-            {
-                case Constants.HELP_FLAG:
-                    ShowHelp();
-                    break;
-                case Constants.VERSION_FLAG:
-                    ShowVersion();
-                    break;
-                default:
-                    ShowVersion();
-                    RunStrategy(args);
-                    break;
-            }
+            ShowVersion();
+            RunProvider(args);
         }
 
-        static void RunStrategy(string[] names)
+        static void RunProvider(string[] names)
         {
             Provider = new NuGetProvider();
             Console.WriteLine();
@@ -58,19 +47,14 @@ namespace NameChk.CLI
                                         .ToString();
 
             Console.WriteLine($"{Constants.APP_NAME} v{versionString}");
+            Console.WriteLine("----------------");
         }
 
         static void ShowHelp()
         {
             ShowVersion();
-            Console.WriteLine("----------------");
 
-            Console.WriteLine($"\nUsage: {Constants.APP_NAME} [options]");
-            Console.WriteLine($"Usage: {Constants.APP_NAME} [names...]");
-
-            Console.WriteLine("\nOptions:");
-            Console.WriteLine($"   {Constants.HELP_FLAG}\tDisplay help");
-            Console.WriteLine($"   {Constants.VERSION_FLAG}\tDisplay version");
+            Console.WriteLine($"\nUsage: {Constants.APP_NAME} [names...]");
 
             Console.WriteLine("\nnames:");
             Console.WriteLine("   list of names to check for the availability");

@@ -6,19 +6,19 @@
 
     <IsPackable>true</IsPackable>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>dotnet-namechk</ToolCommandName>
+    <ToolCommandName>namechk</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <PackageType>DotNetCliTool</PackageType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
     <PackageId>dotnet-namechk</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Description>.NET Core global CLI tool to check for the availability of NuGet package names</Description>
     <Authors>Rohith Reddy</Authors>
     <PackageProjectUrl>https://github.com/rohith/dotnet-namechk</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rohith/dotnet-namechk</RepositoryUrl>
     <PackageTags>dotnet, cli, dotnet-cli, global, tool, namechk, nuget, package</PackageTags>
-    <PackageLicense>https://github.com/rohith/dotnet-namechk/blob/master/LICENSE</PackageLicense>
-
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-# ✨ namechk-cli [dotnet-namechk]
+# ✨ namechk [dotnet-namechk]
 
 .NET Core global CLI tool to check for the availability of NuGet package names
 
@@ -12,18 +12,13 @@ You can get the tool by running this command
 
 ## Usage
 
-    Usage: namecheck [options]
-    Usage: namecheck [names...]
-
-    Options:
-        -h   Display help
-        -v   Display version
+    Usage: namechk [names...]
 
     names:
         list of names to check for the availability
 
     Ex:
-        namecheck miniature-fiesta reimagined-engine scaling-adventure
+        namechk miniature-fiesta reimagined-engine scaling-adventure
 
         miniature-fiesta is available
         reimagined-engine is unavailable

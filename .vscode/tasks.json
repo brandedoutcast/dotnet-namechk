@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/namechk-cli.csproj"
+                "${workspaceFolder}/dotnet-namechk.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
